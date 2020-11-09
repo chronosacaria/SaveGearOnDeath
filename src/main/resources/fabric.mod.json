@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "sgod",
+  "version": "${version}",
+  "name": "Save Gear on Death",
+  "description": "Don't drop your gear or hotbar on death",
+  "authors": [
+    "chronosacaria"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sgod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "chronosacaria.sgod.client.SgodClient"
+    ],
+    "main": [
+      "chronosacaria.sgod.Sgod"
+    ]
+  },
+  "mixins": [
+    "sgod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
