@@ -17,6 +17,7 @@ public class DontDropGearMethods {
                 inv.player.dropItem(stack, true, false);
                 inv.main.set(i, ItemStack.EMPTY); // needed to prevent duplication of some items
             }
+            ci.cancel();
         }
     }
 }

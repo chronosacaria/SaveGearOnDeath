@@ -16,5 +16,7 @@ public class ServerPlayerEntityMixin {
         if (oldPlayer.world.getGameRules().getBoolean(GameRules.KEEP_INVENTORY)) {
             return;
         }
+        ServerPlayerEntity p = (ServerPlayerEntity) (Object) this;
+        p.inventory.clone(oldPlayer.inventory);
     }
 }
