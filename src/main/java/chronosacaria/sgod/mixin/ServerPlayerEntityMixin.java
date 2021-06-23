@@ -17,6 +17,6 @@ public class ServerPlayerEntityMixin {
             return;
         }
         ServerPlayerEntity p = (ServerPlayerEntity) (Object) this;
-        p.inventory.clone(oldPlayer.inventory);
+        p.getInventory().clone(oldPlayer.getInventory());
     }
 }
