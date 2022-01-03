@@ -1,11 +1,13 @@
 {
   "schemaVersion": 1,
   "id": "sgod",
-  "version": "0.0.2",
+  "version": "${version}",
   "name": "Save Gear on Death",
   "description": "Don't drop your gear or hotbar on death",
   "authors": [
-    "chronosacaria"
+    "Chronosacaria",
+    "SattesKrokodil (Art)",
+    "Patreons (Support)"
   ],
   "contact": {},
   "license": "MIT",
@@ -25,6 +27,6 @@
   "depends": {
     "fabricloader": ">=0.10.6+build.214",
     "fabric": "*",
-    "minecraft": "1.17.x"
+    "minecraft": "1.18.x"
   }
 }
